@@ -17,72 +17,73 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="projects">
+<section class="projets">
+  <h1>Mes projets</h1>
+  <p class="intro">
+    Cette page présente les principaux projets que j’ai réalisés dans le cadre
+    de ma formation et en autonomie.
+  </p>
 
-  <!-- --- PROJET 1 --- -->
-  <div class="project-card">
-    <img src="image/.png" alt="Image du projet">
-    <h3>Situation 1 — Système de suivi de performance commerciale avec reporting décisionnel</h3>
-    <p class="short-desc">L'objectif est de centraliser des données commerciales afin de suivre la performance des équipes et faciliter la prise de décision grâce à des indicateurs et des tableaux de suvis.</p>
-    <button class="open-modal" data-modal="modal1">Voir plus</button>
-  </div>
+  <!-- PROJET 1 -->
+  <article class="projet">
+    <h2>Portfolio personnel éco-conçu</h2>
 
-  <!-- --- MODAL PROJET 1 - client leger --- -->
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
+    <p>
+      <strong>Objectif :</strong>
+      Créer un site vitrine personnel pour présenter mon parcours,
+      mes compétences et ma veille technologique.
+    </p>
 
-      <h2>Situation 1 — client léger → analyse & reporting</h2>
+    <p>
+      <strong>Mise en œuvre :</strong>
+      Développement en HTML et CSS, structuration du contenu,
+      optimisation des ressources et hébergement via GitHub Pages.
+    </p>
 
-      <p><strong>Contexte :</strong> Décris ici le contexte...</p>
-      <p><strong>Objectifs :</strong> Liste les objectifs...</p>
-      <p><strong>Travaux réalisés :</strong> Décris les actions...</p>
-      <p><strong>Compétences mobilisées :</strong> Se référer au tableau de compétences</p>
-      <p><strong>Résultats :</strong> Résultat final...</p>
+    <p>
+      <strong>Technologies utilisées :</strong>
+      HTML, CSS, GitHub Pages
+    </p>
 
-      <h3>Pièces jointes :</h3>
-      <ul>
-        <li><a href="#">Captures d’écran</a></li>
-        <li><a href="#">Script</a></li>
-        <li><a href="#">Documentation technique</a></li>
-      </ul>
-
+    <div class="galerie">
+      <img src="projets/portfolio/capture1.png" alt="Page d’accueil du portfolio">
+      <img src="projets/portfolio/capture2.png" alt="Page veille technologique">
     </div>
-  </div>
 
-   <!-- --- PROJET 2 - client lourd --- -->
-  <div class="project-card">
-    <img src="image/.png" alt="Image du projet">
-    <h3>Situation 2 — Imputation de données </h3>
-    <p class="short-desc">L'objectif est d'imputer de la donnée / modifié celle existante, c'est l'interface qui servira aux utilisateurs</p>
-    <button class="open-modal" data-modal="modal1">Voir plus</button>
-  </div>
-
-  <!-- --- MODAL PROJET 2 - client loud --- -->
-
-  <div id="modal1" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-
-      <h2>Situation 2 — client lourd → saisie & modification des données</h2>
-
-      <p><strong>Contexte :</strong> Décris ici le contexte...</p>
-      <p><strong>Objectifs :</strong> Liste les objectifs...</p>
-      <p><strong>Travaux réalisés :</strong> Décris les actions...</p>
-      <p><strong>Compétences mobilisées :</strong> Se référer au tableau de compétences</p>
-      <p><strong>Résultats :</strong> Résultat final...</p>
-
-      <h3>Pièces jointes :</h3>
-      <ul>
-        <li><a href="#">Captures d’écran</a></li>
-        <li><a href="#">Script</a></li>
-        <li><a href="#">Documentation technique</a></li>
-      </ul>
-
+    <div class="liens">
+      <a href="projets/portfolio/documentation.pdf" target="_blank">📄 Documentation</a>
+      <a href="https://github.com/Hugo-Hbt/Hugo-Hbt.github.io" target="_blank">💻 Code source</a>
     </div>
-  </div>
+  </article>
+
+  <!-- PROJET 2 -->
+  <article class="projet">
+    <h2>Veille technologique – Éco-conception web</h2>
+
+    <p>
+      <strong>Objectif :</strong>
+      Mettre en place une veille technologique sur l’éco-conception web
+      afin de suivre les évolutions du numérique responsable.
+    </p>
+
+    <p>
+      <strong>Mise en œuvre :</strong>
+      Recherche d’articles spécialisés, synthèse des informations
+      et organisation de la veille en mode push et pull.
+    </p>
+
+    <p>
+      <strong>Technologies utilisées :</strong>
+      HTML, CSS, flux RSS, newsletters
+    </p>
+
+    <div class="liens">
+      <a href="veille.html">🔎 Accéder à la veille</a>
+    </div>
+  </article>
 
 </section>
+
 
 <section>
   <h1 class="fade-in">Mes Projets Ecole & Entreprise</h1>
@@ -179,3 +180,4 @@ modals.forEach(modal => {
 
 </body>
 </html>
+
