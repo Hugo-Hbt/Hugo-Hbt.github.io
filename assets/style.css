@@ -293,39 +293,62 @@ nav a:hover {
 
 
 
-/* --- CARTE DE PROJET --- */
-.project-card {
-  background: #090832;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  padding: 20px;
+/* --- PROJET --- */
+.projets {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 1rem;
+}
+
+.projets h1 {
   text-align: center;
-  transition: transform .2s;
+  margin-bottom: 1rem;
 }
 
-.project-card:hover {
-  transform: translateY(-5px);
+.projets .intro {
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #555;
 }
 
-.project-card img {
+.projet {
+  background: #f9f9f9;
+  padding: 2rem;
+  margin-bottom: 3rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+.projet h2 {
+  margin-bottom: 1rem;
+  color: #2f6f4e;
+}
+
+.projet p {
+  margin-bottom: 0.8rem;
+  line-height: 1.6;
+}
+
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.galerie img {
   width: 100%;
   border-radius: 8px;
-  margin-bottom: 15px;
 }
 
-.project-card button {
-  margin-top: 10px;
-  padding: 10px 18px;
-  background: #333;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background .3s;
+.liens a {
+  display: inline-block;
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #2f6f4e;
+  font-weight: 500;
 }
-.project-card button:hover {
-  background: #005fcc;
-}
+
 
 /* --- MODAL --- */
 .modal {
