@@ -20,68 +20,47 @@
 <section class="projets">
   <h1>Mes projets</h1>
   <p class="intro">
-    Cette page présente les principaux projets que j’ai réalisés dans le cadre
-    de ma formation et en autonomie.
+    Présentation synthétique des projets réalisés durant ma formation
+    et en entreprise.
   </p>
 
-  <!-- PROJET 1 -->
-  <article class="projet">
-    <h2>Portfolio personnel éco-conçu</h2>
+  <div class="grille-projets">
 
-    <p>
-      <strong>Objectif :</strong>
-      Créer un site vitrine personnel pour présenter mon parcours,
-      mes compétences et ma veille technologique.
-    </p>
+    <!-- PROJET -->
+    <details class="projet-card">
+      <summary>
+        <h2>Portfolio personnel</h2>
+        <p class="objectif">
+          Site vitrine pour présenter mon parcours et mes compétences.
+        </p>
+        <p class="techno">HTML · CSS · GitHub Pages</p>
+      </summary>
 
-    <p>
-      <strong>Mise en œuvre :</strong>
-      Développement en HTML et CSS, structuration du contenu,
-      optimisation des ressources et hébergement via GitHub Pages.
-    </p>
+      <div class="details-projet">
+        <p>
+          <strong>Objectif :</strong>
+          Concevoir un portfolio clair, sobre et éco-conçu.
+        </p>
 
-    <p>
-      <strong>Technologies utilisées :</strong>
-      HTML, CSS, GitHub Pages
-    </p>
+        <p>
+          <strong>Mise en œuvre :</strong>
+          Structuration HTML sémantique, CSS léger,
+          hébergement GitHub Pages.
+        </p>
 
-    <div class="galerie">
-      <img src="projets/portfolio/capture1.png" alt="Page d’accueil du portfolio">
-      <img src="projets/portfolio/capture2.png" alt="Page veille technologique">
-    </div>
+        <div class="galerie">
+          <img src="projets/portfolio/image1.png" alt="Page d’accueil">
+        </div>
 
-    <div class="liens">
-      <a href="projets/portfolio/documentation.pdf" target="_blank">📄 Documentation</a>
-      <a href="https://github.com/Hugo-Hbt/Hugo-Hbt.github.io" target="_blank">💻 Code source</a>
-    </div>
-  </article>
+        <a href="projets/portfolio/documentation.pdf" target="_blank">
+          📄 Documentation
+        </a>
+      </div>
+    </details>
 
-  <!-- PROJET 2 -->
-  <article class="projet">
-    <h2>Veille technologique – Éco-conception web</h2>
+    <!-- DUPLIQUE CE BLOC POUR CHAQUE PROJET -->
 
-    <p>
-      <strong>Objectif :</strong>
-      Mettre en place une veille technologique sur l’éco-conception web
-      afin de suivre les évolutions du numérique responsable.
-    </p>
-
-    <p>
-      <strong>Mise en œuvre :</strong>
-      Recherche d’articles spécialisés, synthèse des informations
-      et organisation de la veille en mode push et pull.
-    </p>
-
-    <p>
-      <strong>Technologies utilisées :</strong>
-      HTML, CSS, flux RSS, newsletters
-    </p>
-
-    <div class="liens">
-      <a href="veille.html">🔎 Accéder à la veille</a>
-    </div>
-  </article>
-
+  </div>
 </section>
 
 
@@ -180,4 +159,5 @@ modals.forEach(modal => {
 
 </body>
 </html>
+
 
