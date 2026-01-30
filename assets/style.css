@@ -159,6 +159,11 @@ nav a:hover {
   color: var(--text-muted);
 }
 
+.btn {
+  display: block;
+  margin: 20px auto;
+}
+
 /* ===== CARD ===== */
 .card {
   background: var(--card);
