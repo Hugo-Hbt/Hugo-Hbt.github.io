@@ -371,16 +371,87 @@ nav a:hover {
 
 
 /* --- PROJET --- */
+/* ===== PROJETS ===== */
+
 .grille-projets {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
 }
 
 .projet-card {
-  background: #f5f7f6;
-  border-radius: 10px;
-  padding: 1.2rem;
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 22px;
+  border: 1px solid rgba(255,255,255,0.05);
+  transition: transform .25s, box-shadow .25s;
+}
+
+.projet-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.35);
+}
+
+.projet-card summary {
+  list-style: none;
+  cursor: pointer;
+}
+
+.projet-card summary::-webkit-details-marker {
+  display: none;
+}
+
+/* titre */
+
+.projet-card h2 {
+  font-size: 1.15rem;
+  color: var(--text);
+  margin-bottom: 6px;
+}
+
+/* objectif résumé */
+
+.objectif {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+/* technologies */
+
+.techno {
+  font-size: 0.85rem;
+  color: var(--accent);
+  margin-top: 6px;
+  font-weight: 500;
+}
+
+/* contenu ouvert */
+
+.details-projet {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+}
+
+.details-projet strong {
+  color: var(--text);
+}
+
+/* image projet */
+
+.galerie img {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255,255,255,0.05);
+}
+
+/* ouverture */
+
+details[open] {
+  background: #111827;
 }
 
 .projet-card summary {
