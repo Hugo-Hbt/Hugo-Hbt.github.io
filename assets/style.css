@@ -354,61 +354,46 @@ nav a:hover {
 
 /* ===== TIMELINE MODERNE ===== */
 
-.timeline {
-  position: relative;
-  max-width: 900px;
-  margin: 60px auto;
-  padding: 20px 0;
+.timeline{
+max-width:900px;
+margin:auto;
+position:relative;
 }
 
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  width: 4px;
-  height: 100%;
-  background: #d1d5db;
-  transform: translateX(-50%);
+.timeline::before{
+content:"";
+position:absolute;
+left:50%;
+width:3px;
+height:100%;
+background:#ddd;
 }
 
-/* item */
-.timeline-item {
-  position: relative;
-  width: 50%;
-  padding: 20px;
-  box-sizing: border-box;
+.timeline-item{
+width:50%;
+padding:20px;
+position:relative;
 }
 
-/* gauche */
-.timeline-item:nth-child(odd) {
-  left: 0;
-  text-align: right;
+.timeline-item:nth-child(odd){
+left:0;
 }
 
-/* droite */
-.timeline-item:nth-child(even) {
-  left: 50%;
+.timeline-item:nth-child(even){
+left:50%;
 }
 
-/* point */
-.timeline-item::before {
-  content: "";
-  position: absolute;
-  top: 25px;
-  width: 14px;
-  height: 14px;
-  background: #22c55e;
-  border-radius: 50%;
-  border: 3px solid white;
-  box-shadow: 0 0 0 3px #22c55e33;
+.timeline-content{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
 }
 
-.timeline-item:nth-child(odd)::before {
-  right: -7px;
-}
-
-.timeline-item:nth-child(even)::before {
-  left: -7px;
+.timeline-date{
+font-weight:bold;
+color:#2ecc71;
+margin-bottom:10px;
 }
 
 /* carte */
