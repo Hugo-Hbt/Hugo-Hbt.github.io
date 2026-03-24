@@ -1,11 +1,38 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Compétences</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
-  <title>Compétences</title>
+<style>
+body {font-family: Arial; margin:0; background:#f5f7fa;}
+nav {background:#2c3e50; padding:10px; text-align:center;}
+nav a {color:white; margin:0 10px; text-decoration:none; font-weight:bold;}
+
+h1 {text-align:center; margin:30px 0;}
+h2 {margin-left:3%; color:#2c3e50;}
+
+/* TABLE */
+table {width:95%; margin:20px auto; border-collapse: collapse; background:white; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+th, td {padding:12px; border:1px solid #ddd; text-align:center; vertical-align:top;}
+th {background:#34495e; color:white; position:sticky; top:0;}
+tr:nth-child(even){background:#f9f9f9;}
+
+.details {text-align:left; font-size:0.9em;}
+
+.badge {display:inline-block; padding:4px 8px; margin:2px; border-radius:5px; font-size:0.75em; color:white;}
+.patrimoine {background:#2980b9;}
+.support {background:#e67e22;}
+.web {background:#8e44ad;}
+.projet {background:#16a085;}
+.service {background:#27ae60;}
+.devpro {background:#c0392b;}
+
+.section-title {margin-top:40px; text-align:center; font-size:1.3em; font-weight:bold;}
+
+</style>
 </head>
 
 <body>
@@ -20,24 +47,9 @@
   <a href="contact.html">Contact</a>
 </nav>
 
-<section class="skills-section">
+<h1>Tableau de compétences (BTS SIO)</h1>
 
-  <h1 class="fade-in">Tableau de compétences</h1>
-
-  <!-- Iframe affiché dans la page -->
-
-
-  <!-- Bouton ouverture plein écran (nouvel onglet) -->
-  <div class="open-fullscreen">
-      <a href="image/8-1 - BTS SIO - 2025 - Annexe 8-1 - Epreuve E5 - Tableau de synthese.pdf" target="_blank">
-          Tableau de synthèse
-      </a>
-  </div>
-
-</section>
-
-<h1>Compétences mises en œuvre</h1>
-
+<div class="section-title">Formation - 1ère année</div>
 <table>
 <tr>
 <th>Projet</th>
@@ -47,260 +59,136 @@
 </tr>
 
 <tr>
-<td>Veille technologique</td>
-<td>16/09/2024 - 05/04/2026</td>
-<td><span class="badge">Dev Pro</span></td>
-<td class="details">Mise en place d'une veille sur l’éco-conception web, utilisation d’outils de veille et amélioration continue des connaissances.</td>
-</tr>
-
-<tr>
-<td>Projet KPI automobile</td>
-<td>05/01/2026 - 12/03/2026</td>
-<td>
-<span class="badge">Patrimoine</span>
-<span class="badge">Projet</span>
-<span class="badge">Service</span>
-</td>
-<td class="details">Manipulation de données métier, création de tableaux de bord et travail en mode projet avec objectifs et suivi.</td>
-</tr>
-
-<tr>
-<td>Application imputation</td>
-<td>13/03/2026 - 05/04/2026</td>
-<td>
-<span class="badge">Patrimoine</span>
-<span class="badge">Support</span>
-<span class="badge">Projet</span>
-<span class="badge">Service</span>
-</td>
-<td class="details">Développement d’une application métier répondant à un besoin utilisateur avec gestion des données.</td>
-</tr>
-
-<tr>
 <td>Site Web HTML/CSS</td>
 <td>06/09/2024 - 14/11/2024</td>
-<td>
-<span class="badge">Web</span>
-<span class="badge">Projet</span>
-<span class="badge">Service</span>
-</td>
-<td class="details">Création d’un site vitrine, mise en ligne et structuration du projet web.</td>
+<td><span class="badge web">Web</span><span class="badge projet">Projet</span><span class="badge service">Service</span></td>
+<td class="details">Création d’un site vitrine pour représenter une entreprise.</td>
 </tr>
 
 <tr>
 <td>Python carnet adresse</td>
 <td>27/11/2024 - 13/12/2024</td>
-<td>
-<span class="badge">Projet</span>
-<span class="badge">Service</span>
-<span class="badge">Dev Pro</span>
-</td>
-<td class="details">Développement d’un script exploitant un fichier CSV avec logique métier.</td>
+<td><span class="badge projet">Projet</span><span class="badge service">Service</span></td>
+<td class="details">Développement d’un outil manipulant des données CSV.</td>
 </tr>
 
 <tr>
 <td>Power BI inventaire</td>
 <td>14/11/2024 - 20/01/2025</td>
-<td>
-<span class="badge">Patrimoine</span>
-<span class="badge">Projet</span>
-<span class="badge">Service</span>
-</td>
-<td class="details">Visualisation de données et création d’indicateurs dynamiques pour le suivi.</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge projet">Projet</span><span class="badge service">Service</span></td>
+<td class="details">Création d’un tableau de bord dynamique pour le suivi.</td>
 </tr>
 
 <tr>
-<td>Carte IRVE (Python + QGIS)</td>
+<td>Carte IRVE (QGIS + Python)</td>
 <td>07/03/2025 - 13/05/2025</td>
-<td>
-<span class="badge">Patrimoine</span>
-<span class="badge">Projet</span>
-<span class="badge">Service</span>
-</td>
-<td class="details">Exploitation de données géographiques et création d’un outil de suivi.</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge projet">Projet</span><span class="badge service">Service</span></td>
+<td class="details">Exploitation de données géographiques pour visualisation.</td>
 </tr>
 
 <tr>
 <td>Site + SQL</td>
 <td>03/02/2025 - 26/06/2025</td>
-<td>
-<span class="badge">Patrimoine</span>
-<span class="badge">Projet</span>
-<span class="badge">Service</span>
-</td>
-<td class="details">Création d’un site connecté à une base de données avec hébergement.</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge web">Web</span><span class="badge service">Service</span></td>
+<td class="details">Développement d’un site connecté à une base de données.</td>
+</tr>
+
+</table>
+
+<div class="section-title">Entreprise - 1ère année</div>
+<table>
+<tr>
+<th>Projet</th>
+<th>Compétences</th>
+<th>Justification</th>
 </tr>
 
 <tr>
-<td>Analyse site vulnérable</td>
-<td>04/12/2025 - 19/12/2025</td>
-<td>
-<span class="badge">Patrimoine</span>
-<span class="badge">Support</span>
-<span class="badge">Dev Pro</span>
-</td>
-<td class="details">Détection de failles et proposition de corrections de sécurité.</td>
+<td>Export / Import données</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge support">Support</span></td>
+<td class="details">Manipulation et mise à jour de données métiers.</td>
 </tr>
 
 <tr>
-<td>Script disponibilité (BASH)</td>
-<td>28/12/2026 - 14/01/2026</td>
-<td>
-<span class="badge">Patrimoine</span>
-<span class="badge">Support</span>
-<span class="badge">Service</span>
-</td>
-<td class="details">Automatisation du monitoring d’un site web avec alerte.</td>
-</tr>
-
-<tr>
-<td>Stage - outils de suivi</td>
-<td>Milieu pro</td>
-<td>
-<span class="badge">Patrimoine</span>
-<span class="badge">Projet</span>
-<span class="badge">Service</span>
-</td>
-<td class="details">Création d’outils de suivi pour plusieurs services métiers avec exploitation des données.</td>
+<td>Outils de suivi (guichet / anomalies)</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge projet">Projet</span><span class="badge service">Service</span></td>
+<td class="details">Création d’outils pour suivre les activités et anomalies.</td>
 </tr>
 
 <tr>
 <td>Portage logiciel</td>
-<td>Milieu pro</td>
-<td>
-<span class="badge">Service</span>
-<span class="badge">Dev Pro</span>
-</td>
-<td class="details">Accompagnement des équipes dans le changement d’outil et formation utilisateurs.</td>
+<td><span class="badge service">Service</span><span class="badge devpro">Dev Pro</span></td>
+<td class="details">Accompagnement des utilisateurs et formation.</td>
+</tr>
+
+</table>
+
+<div class="section-title">Formation - 2ème année</div>
+<table>
+<tr>
+<th>Projet</th>
+<th>Période</th>
+<th>Compétences</th>
+<th>Justification</th>
+</tr>
+
+<tr>
+<td>PSSI</td>
+<td>24/09/2025 - 26/09/2025</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge devpro">Dev Pro</span></td>
+<td class="details">Rédaction d’une politique de sécurité.</td>
+</tr>
+
+<tr>
+<td>BDD SQL</td>
+<td>06/11/2025 - 07/11/2025</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge service">Service</span></td>
+<td class="details">Création et gestion de base de données.</td>
+</tr>
+
+<tr>
+<td>Analyse vulnérabilité</td>
+<td>04/12/2025 - 19/12/2025</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge support">Support</span></td>
+<td class="details">Détection et correction de failles.</td>
+</tr>
+
+<tr>
+<td>Script BASH</td>
+<td>28/12/2025 - 14/01/2026</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge support">Support</span><span class="badge service">Service</span></td>
+<td class="details">Automatisation de la supervision.</td>
+</tr>
+
+</table>
+
+<div class="section-title">Entreprise - 2ème année</div>
+<table>
+<tr>
+<th>Projet</th>
+<th>Compétences</th>
+<th>Justification</th>
+</tr>
+
+<tr>
+<td>Suivi prestataires</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge projet">Projet</span></td>
+<td class="details">Pilotage d’activité via indicateurs.</td>
+</tr>
+
+<tr>
+<td>Suivi anomalies</td>
+<td><span class="badge patrimoine">Patrimoine</span><span class="badge support">Support</span></td>
+<td class="details">Analyse et suivi des incidents métiers.</td>
+</tr>
+
+<tr>
+<td>Excellence opérationnelle</td>
+<td><span class="badge projet">Projet</span><span class="badge devpro">Dev Pro</span></td>
+<td class="details">Amélioration continue des processus.</td>
 </tr>
 
 </table>
 
 </body>
 </html>
- <section class="skills-section">
-  <h1 class="fade-in">Compétences</h1>
-
-  <!-- Développement -->
-  <h2 class="skills-category">Développement</h2>
-  <div class="skills-grid">
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-html5-plain"></i>
-        <h3>HTML / CSS</h3>
-      </div>
-      <div class="skill-bar"><span style="width:70%"></span></div>
-      <p>Intermédiaire — portfolio, projets web</p>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-javascript-plain"></i>
-        <h3>JavaScript</h3>
-      </div>
-      <div class="skill-bar"><span style="width:35%"></span></div>
-      <p>Débutant — scripts, interactions simples</p>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-python-plain"></i>
-        <h3>Python</h3>
-      </div>
-      <div class="skill-bar"><span style="width:60%"></span></div>
-      <p>Intermédiaire — automatisation, scripts</p>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-mysql-plain"></i>
-        <h3>SQL</h3>
-      </div>
-      <div class="skill-bar"><span style="width:70%"></span></div>
-      <p>Moyen avancé — requêtes, bases relationnelles</p>
-    </div>
-
-  </div>
-
-  <!-- Systèmes -->
-  <h2 class="skills-category">Systèmes</h2>
-  <div class="skills-grid">
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-linux-plain"></i>
-        <h3>Linux</h3>
-      </div>
-      <div class="skill-bar"><span style="width:50%"></span></div>
-      <p>Moyen — environnement serveur</p>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-bash-plain"></i>
-        <h3>Bash</h3>
-      </div>
-      <div class="skill-bar"><span style="width:40%"></span></div>
-      <p>Débutant — scripts simples</p>
-    </div>
-
-  </div>
-
-  <!-- Data / BI -->
-  <h2 class="skills-category">Data / BI</h2>
-  <div class="skills-grid">
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-microsoftsqlserver-plain"></i>
-        <h3>Power BI</h3>
-      </div>
-      <div class="skill-bar"><span style="width:85%"></span></div>
-      <p>Avancé — reporting, visualisation</p>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-microsoftoffice-plain"></i>
-        <h3>Excel</h3>
-      </div>
-      <div class="skill-bar"><span style="width:80%"></span></div>
-      <p>Avancé — analyse, automatisation</p>
-    </div>
-
-  </div>
-
-  <!-- Métiers -->
-  <h2 class="skills-category">Métiers & Outils</h2>
-  <div class="skills-grid">
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-illustrator-plain"></i>
-        <h3>SIG Mercador / GSA</h3>
-      </div>
-      <div class="skill-bar"><span style="width:100%"></span></div>
-      <p>Expert — cartographie, données SIG</p>
-    </div>
-
-    <div class="skill-card">
-      <div class="skill-header">
-        <i class="devicon-photoshop-plain"></i>
-        <h3>Suite Adobe</h3>
-      </div>
-      <div class="skill-bar"><span style="width:90%"></span></div>
-      <p>Expert — création graphique</p>
-    </div>
-
-  </div>
-
-</section>
-
-</body>
-</html>
-
-
-
-
-
