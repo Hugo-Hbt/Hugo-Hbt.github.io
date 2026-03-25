@@ -1,9 +1,107 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" href="assets/style.css">
-  <title>Veille Technologique</title>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="assets/style.css">
+<title>Activité entreprise</title>
+
+<style>
+
+body {
+  font-family: Arial;
+  margin:0;
+  background:#f4f6f8;
+}
+
+nav {
+  background:#2c3e50;
+  padding:10px;
+  text-align:center;
+}
+
+nav a {
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+h1 {
+  text-align:center;
+  margin:30px 0;
+}
+
+/* GRID */
+.grille {
+  display:flex;
+  flex-wrap:wrap;
+  gap:20px;
+  justify-content:center;
+  padding:20px;
+}
+
+/* CARD */
+.card {
+  width:320px;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 4px 10px rgba(0,0,0,0.1);
+  overflow:hidden;
+  transition:0.3s;
+}
+
+.card:hover {
+  transform:translateY(-5px);
+}
+
+.card img {
+  width:100%;
+  height:160px;
+  object-fit:cover;
+}
+
+.card-content {
+  padding:15px;
+}
+
+h2 {
+  font-size:1.1em;
+  margin:0;
+}
+
+/* COMPETENCES */
+.competences {
+  margin-top:10px;
+}
+
+.competence {
+  display:inline-block;
+  background:#e8f3ea;
+  color:#2c3e50;
+  padding:5px 8px;
+  margin:3px;
+  border-radius:5px;
+  font-size:0.75em;
+}
+
+/* DETAILS */
+details {
+  margin-top:10px;
+}
+
+summary {
+  cursor:pointer;
+  font-weight:bold;
+  font-size:0.85em;
+}
+
+.details-text {
+  font-size:0.8em;
+  color:#555;
+  margin-top:5px;
+}
+
+</style>
 </head>
 
 <body>
@@ -12,262 +110,129 @@
   <a href="index.html">Accueil</a>
   <a href="cv.html">CV</a>
   <a href="competences.html">Compétences</a>
-  <a href="activite_entreprise.html">Activité_entreprise</a>
+  <a href="activite_entreprise.html">Activité entreprise</a>
   <a href="projets.html">Projets</a>
   <a href="veille.html">Veille</a>
   <a href="contact.html">Contact</a>
 </nav>
 
-<section>
-  <h1 class="fade-in">Activités en entreprise</h1>
+<h1>Activités en entreprise</h1>
 
-  <div class="card">
-    <h2>Mise en place de différent reporting automatisé : pour différents services - (DAX + SQL)</h2>
-      <ul>
-        <li>Dossier *4</li>
-        <li>Non-receptionner</li>
-        <li>En attente de validation Charge de projet</li>
-        <li>Suivis Prestataire - Atlantic</li>
-        <li>Suivis sur les plans bloqués (lié Grande Echelle côté métier)</li>
-        <li>Suivis pour excellence opérationnelle</li>
+<div class="grille">
 
-      </ul>
-
-
-   <h2>Maintenance et fiabilisation de bases de données décisionnelles </h2>
-    <ul>
-      <li>Développement et maintenance des reporting</li>
-      <li>Correction des bugs</li>
-      <li>Vérification des données</li>
-      <li>Utilisation de technologies (SQL,DAX)</li>
-    </ul>
-
-    
-     <h2>Suivi applicatif </h2>
-    <ul>
-      <li>Suivi des applications métiers</li>
-      <li>Réunions avec les PO (évolutions, nouveaux besoins, corrections)</li>
-      <li>Préparation de réunions d’information sur les nouveaux outils</li>
-    </ul>
-
-
-     <h2>Accompagnement & montée en compétences des équipes </h2>
-    <ul>
-      <li>Préparation de supports pédagogiques</li>
-      <li>Transmission de connaissances techniques (électricité / pratique terrain)</li>
-    </ul>
-
-    
-     <h2>Gestion et traitement de données SIG </h2>
-    <ul>
-      <li>Import de masse sur SIG (GSA / ArcGIS)</li>
-      <li>Export de masse depuis le SIG interne (Mercador)</li>
-    </ul>
-    
-
-
-<title>Présentation Activités BTS SIO SLAM</title>
-<style>
-body {
-    font-family: "Segoe UI", Arial, sans-serif;
-    background-color: #f2f4f6;
-    color: #2f3437;
-    margin: 0;
-    padding: 20px;
-}
-
-/* TITRES */
-
-h1 {
-    text-align: center;
-    margin-bottom: 40px;
-    color: #1f2933;
-}
-
-h2 {
-    color: #374151;
-}
-
-/* CONTAINER */
-
-.container {
-    max-width: 1100px;
-    margin: auto;
-}
-
-/* CARD ACTIVITES */
-
-.card {
-    background: #ffffff;
-    padding: 22px;
-    margin-bottom: 25px;
-    border-radius: 8px;
-    border: 1px solid #e2e6ea;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
-
-/* BLOCS COMPETENCES */
-
-.competences {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 10px;
-    margin-top: 15px;
-}
-
-.competence {
-    background: #edf1f4;
-    padding: 10px 12px;
-    border-radius: 6px;
-    font-size: 14px;
-    border: 1px solid #d6dde3;
-}
-
-/* CASE COCHEE */
-
-.checked {
-    background: #e8f3ea;
-    border-left: 4px solid #5f8f6b;
-    border: 1px solid #cfe3d4;
-}
-
-/* DETAILS / JUSTIFICATION */
-
-details {
-    margin-top: 15px;
-    background: #f6f7f8;
-    padding: 12px;
-    border-radius: 6px;
-    border: 1px solid #e1e4e8;
-}
-
-summary {
-    font-weight: 600;
-    cursor: pointer;
-    color: #374151;
-}
-
-/* LISTES */
-
-ul {
-    line-height: 1.6;
-}
-
-/* FOOTER */
-
-footer {
-    text-align: center;
-    margin-top: 40px;
-    font-size: 13px;
-    color: #6b7280;
-}
-</style>
-    
-</head>
-
-<body>
-
-<h1>Présentation des Activités - BTS SIO SLAM</h1>
-
-<div class="container">
-
-<!-- ACTIVITÉ 1 -->
+<!-- CARD 1 -->
 <div class="card">
-    <h2>Maintenance et fiabilisation de bases de données décisionnelles</h2>
+<img src="image/reporting.jpg">
+<div class="card-content">
 
-    <div class="competences">
-        <div class="competence checked">✔ Répondre aux incidents</div>
-        <div class="competence checked">✔ Mettre à disposition un service</div>
-        <div class="competence checked">✔ Gérer le patrimoine informatique</div>
-    </div>
+<h2>Reporting automatisé</h2>
 
-    <details>
-        <summary>Voir la justification</summary>
-        <p>
-        Cette activité implique la correction de bugs, la vérification de données
-        et l’optimisation des requêtes SQL/DAX.  
-        Elle correspond à la gestion d’incidents applicatifs, aux tests
-        d’intégration et à la mise à disposition de reporting fiables aux utilisateurs.
-        </p>
-    </details>
+<div class="competences">
+<span class="competence">Gérer le patrimoine</span>
+<span class="competence">Mettre à disposition</span>
+<span class="competence">Projet</span>
 </div>
 
-<!-- ACTIVITÉ 2 -->
+<details>
+<summary>Voir détails</summary>
+<p class="details-text">
+Création de plusieurs dashboards (DAX + SQL) pour le suivi d'activité,
+prestataires et indicateurs métiers.
+</p>
+</details>
+
+</div>
+</div>
+
+<!-- CARD 2 -->
 <div class="card">
-    <h2>Suivi applicatif et réunions avec les PO</h2>
+<img src="image/database.jpg">
+<div class="card-content">
 
-    <div class="competences">
-        <div class="competence checked">✔ Répondre aux incidents</div>
-        <div class="competence checked">✔ Travailler en mode projet</div>
-    </div>
+<h2>Maintenance BDD</h2>
 
-    <details>
-        <summary>Voir la justification</summary>
-        <p>
-        Cette activité comprend la collecte des besoins, le suivi des évolutions,
-        la planification des actions et la coordination avec les équipes métiers.
-        Elle relève donc du pilotage de projet et du traitement des demandes d’évolution.
-        </p>
-    </details>
+<div class="competences">
+<span class="competence">Support</span>
+<span class="competence">Patrimoine</span>
 </div>
 
-<!-- ACTIVITÉ 3 -->
+<details>
+<summary>Voir détails</summary>
+<p class="details-text">
+Correction de bugs, vérification des données et optimisation des requêtes SQL/DAX.
+</p>
+</details>
+
+</div>
+</div>
+
+<!-- CARD 3 -->
 <div class="card">
-    <h2>Import / Export de données SIG (ArcGIS / Mercador)</h2>
+<img src="image/app.jpg">
+<div class="card-content">
 
-    <div class="competences">
-        <div class="competence checked">✔ Gérer le patrimoine informatique</div>
-        <div class="competence checked">✔ Mettre à disposition un service</div>
-    </div>
+<h2>Suivi applicatif</h2>
 
-    <details>
-        <summary>Voir la justification</summary>
-        <p>
-        Les imports/exports de masse nécessitent la manipulation de ressources
-        numériques, le contrôle qualité des données et leur mise à disposition
-        auprès des utilisateurs métiers.
-        </p>
-    </details>
+<div class="competences">
+<span class="competence">Support</span>
+<span class="competence">Projet</span>
 </div>
 
-<!-- ACTIVITÉ 4 -->
+<details>
+<summary>Voir détails</summary>
+<p class="details-text">
+Suivi des applications, réunions avec les PO et gestion des évolutions.
+</p>
+</details>
+
+</div>
+</div>
+
+<!-- CARD 4 -->
 <div class="card">
-    <h2>Accompagnement et montée en compétences des équipes</h2>
+<img src="image/formation.jpg">
+<div class="card-content">
 
-    <div class="competences">
-        <div class="competence checked">✔ Mettre à disposition un service</div>
-        <div class="competence checked">✔ Organiser son développement professionnel</div>
-    </div>
+<h2>Accompagnement équipes</h2>
 
-    <details>
-        <summary>Voir la justification</summary>
-        <p>
-        Préparation de supports pédagogiques et transmission de connaissances
-        techniques. Cette activité correspond à l’accompagnement utilisateur
-        et au développement professionnel continu.
-        </p>
-    </details>
+<div class="competences">
+<span class="competence">Service</span>
+<span class="competence">Dev pro</span>
+</div>
+
+<details>
+<summary>Voir détails</summary>
+<p class="details-text">
+Formation des utilisateurs, création de supports pédagogiques et transmission de compétences.
+</p>
+</details>
+
+</div>
+</div>
+
+<!-- CARD 5 -->
+<div class="card">
+<img src="image/map.jpg">
+<div class="card-content">
+
+<h2>Données SIG</h2>
+
+<div class="competences">
+<span class="competence">Patrimoine</span>
+<span class="competence">Service</span>
+</div>
+
+<details>
+<summary>Voir détails</summary>
+<p class="details-text">
+Import/export de données via GSA, ArcGIS et Mercador.
+</p>
+</details>
+
+</div>
 </div>
 
 </div>
-
-
 
 </body>
 </html>
-</body>
-</html>
-
-</body>
-</html>
-<footer>
-BTS SIO SLAM - Tableau de compétences contextualisé
-</footer>
-
-
-
-
-
-
-
-
