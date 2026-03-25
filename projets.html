@@ -4,242 +4,140 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="assets/style.css">
 <title>Projets</title>
+
+<style>
+body {font-family: Arial; margin:0; background:#f4f6f8;}
+nav {background:#2c3e50; padding:10px; text-align:center;}
+nav a {color:white; margin:0 10px; text-decoration:none; font-weight:bold;}
+
+h1 {text-align:center; margin:30px 0;}
+
+.grille-projets {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; padding:20px;}
+
+.projet-card {width:300px; background:white; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden; cursor:pointer; transition:0.3s;}
+.projet-card:hover {transform:translateY(-5px);}
+
+.projet-card summary {list-style:none; padding:0;}
+.projet-card img {width:100%; height:180px; object-fit:cover;}
+
+.projet-content {padding:15px;}
+
+.projet-content h2 {margin:0; font-size:1.2em;}
+.techno {font-size:0.8em; color:#777;}
+
+.details-projet {padding:15px; border-top:1px solid #ddd;}
+
+.projet-section {margin-bottom:15px;}
+.projet-section h3 {margin-bottom:5px; color:#2c3e50;}
+
+.galerie {display:flex; gap:10px; flex-wrap:wrap;}
+.galerie img {width:100px; border-radius:5px;}
+
+.tags span {background:#3498db; color:white; padding:5px 8px; margin:2px; border-radius:5px; font-size:0.8em;}
+
+.btn {display:inline-block; margin-top:5px; padding:6px 10px; background:#27ae60; color:white; text-decoration:none; border-radius:5px; font-size:0.8em;}
+
+</style>
+
 </head>
 
 <body>
 
 <nav>
   <a href="index.html">Accueil</a>
-  <a href="cv.html">CV</a>
-  <a href="competences.html">Compétences</a>
-  <a href="activite_entreprise.html">Activité entreprise</a>
   <a href="projets.html">Projets</a>
-  <a href="veille.html">Veille</a>
-  <a href="contact.html">Contact</a>
 </nav>
 
-<section class="projets">
-
-<h1>Projets de fin d'année</h1>
-<p class="intro">
-Présentation de projets réalisés durant ma formation et en entreprise.
-</p>
+<h1>Mes projets</h1>
 
 <div class="grille-projets">
 
 <!-- PROJET 1 -->
-
 <details class="projet-card">
-
 <summary>
-<h2>Suivi de performance commerciale</h2>
+<img src="image/Page_acceuil_site_automobile.png">
+<div class="projet-content">
+<h2>Suivi de performance</h2>
 <p class="techno">HTML · CSS · SQL · PHP</p>
+</div>
 </summary>
 
 <div class="details-projet">
 
-<section class="projet-section">
+<div class="projet-section">
 <h3>📌 Contexte</h3>
-<p>
-Projet réalisé dans le cadre du BTS visant à centraliser les données commerciales
-de différents points de vente automobile afin de suivre les performances des équipes,
-du stock ou de l'entreprise en général
-</p>
-</section>
+<p>Centralisation des données commerciales automobile.</p>
+</div>
 
-<section class="projet-section">
+<div class="projet-section">
 <h3>🎯 Objectif</h3>
-<p>
-Mettre en place une interface permettant la consultation des indicateurs
-de performance et l'analyse des données commerciales sur différents niveaux hiérarchiques
-</p>
-</section>
+<p>Suivre les performances via dashboard.</p>
+</div>
 
-<section class="projet-section">
-<h3>🧠 Conception</h3>
-
-<p>Schéma de la base de données :</p>
-
-<a href="image/model_vente_vehicule_lié_client_lege-Model EA.drawio.pdf" class="btn">
-Voir le schéma BDD
-</a>
-
-</section>
-
-<section class="projet-section">
-
-<h3>💻 Interface du projet</h3>
-
+<div class="projet-section">
+<h3>💻 Aperçu</h3>
 <div class="galerie">
-
 <img src="image/Page_connexion_site_automobile.png">
-<img src="image/Page_acceuil_site_automobile.png">
 <img src="image/Vue_directeur_general.png">
-
+</div>
 </div>
 
-</section>
-
-<section class="projet-section">
-
-<h3>⚙️ Technologies utilisées</h3>
-
+<div class="projet-section">
+<h3>⚙️ Tech</h3>
 <div class="tags">
-
-<span>HTML</span>
-<span>CSS</span>
-<span>SQL</span>
-<span>PHP</span>
-
+<span>HTML</span><span>CSS</span><span>SQL</span><span>PHP</span>
+</div>
 </div>
 
-</section>
-
-<section class="projet-section">
-
-<h3>📄 Documentation</h3>
-
-<a href="image/Fiche_Réalisation_E6_SLAM_2025_client_lege.pdf" class="btn">
-Voir la documentation
-</a>
-
-</section>
-
 </div>
-
 </details>
-
 
 <!-- PROJET 2 -->
-
 <details class="projet-card">
-
 <summary>
-<h2>Interface d'imputation de données</h2>
-<p class="techno">HTML · CSS · SQL · PHP</p>
+<img src="images/projet1.png">
+<div class="projet-content">
+<h2>Imputation de données</h2>
+<p class="techno">HTML · SQL · PHP</p>
+</div>
 </summary>
 
 <div class="details-projet">
 
-<section class="projet-section">
+<div class="projet-section">
 <h3>📌 Contexte</h3>
-<p>
-Permettre aux utilisateurs de saisir et modifier des données via une interface simple et accessible.
-</p>
-</section>
+<p>Saisie et modification de données utilisateur.</p>
+</div>
 
-<section class="projet-section">
+<div class="projet-section">
 <h3>🎯 Objectif</h3>
-<p>
-Création d'une interface web permettant l'imputation de données avec stockage en base SQL et traitement PHP.
-</p>
-</section>
+<p>Interface simple avec stockage SQL.</p>
+</div>
 
-<section class="projet-section">
-<h3>🧠 Conception</h3>
-
-<p>Schéma de la base de données :</p>
-
-<img src="images/schema-bdd.png" class="schema">
-
-</section>
-
-<section class="projet-section">
-
-<h3>💻 Interface du projet</h3>
-
+<div class="projet-section">
+<h3>💻 Aperçu</h3>
 <div class="galerie">
-
-<img src="images/projet1.png">
 <img src="images/projet2.png">
 <img src="images/projet3.png">
-
+</div>
 </div>
 
-</section>
-
-<section class="projet-section">
-
-<h3>⚙️ Technologies utilisées</h3>
-
-<div class="tags">
-
-<span>HTML</span>
-<span>CSS</span>
-<span>SQL</span>
-<span>PHP</span>
-
 </div>
-
-</section>
-
-<section class="projet-section">
-
-<h3>📄 Documentation</h3>
-
-<a href="docs/projet1.pdf" class="btn">
-Voir la documentation
-</a>
-
-</section>
-
-</div>
-
 </details>
 
+</div>
 
-<section class="projets-ecole">
+<h1>Autres projets</h1>
 
-<h1>Projets réalisés en formation</h1>
-
-<ul class="liste-projets">
-
-<li>
-<strong>Site de présentation d’entreprise</strong><br>
-Développement HTML / CSS pour présenter l'histoire et l'activité d'une entreprise.
-</li>
-
-<li>
-<strong>Conception d'une base de données</strong><br>
-Modélisation EA puis création de la base en SQL.
-</li>
-
-<li>
-<strong>Site web connecté à une base de données</strong><br>
-Interface HTML reliée à une base SQL.
-</li>
-
-<li>
-<strong>Carnet d'adresse</strong><br>
-Application réalisée en Python.
-</li>
-
-<li>
-<strong>Carte du déploiement des bornes électriques</strong><br>
-Réalisation avec QGIS et Python.
-</li>
-
-<li>
-<strong>Mise en place d'un serveur FTP</strong><br>
-Configuration via Bash sous Linux.
-</li>
-
-<li>
-<strong>Suivi de disponibilité de sites web</strong><br>
-Script Bash vérifiant les temps de réponse et générant des rapports automatisés.
-</li>
-
+<div style="width:90%; margin:auto; background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
+<ul>
+<li>Site vitrine HTML / CSS</li>
+<li>Base de données SQL</li>
+<li>Application Python CSV</li>
+<li>Carte QGIS</li>
+<li>Script Bash monitoring</li>
 </ul>
-
-</section>
+</div>
 
 </body>
 </html>
-
-
-
-
-
-
-
-
