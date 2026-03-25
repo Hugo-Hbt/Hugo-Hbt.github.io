@@ -5,6 +5,111 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="assets/style.css">
 <title>Veille Technologique</title>
+
+<style>
+
+/* BASE */
+body {
+  font-family: Arial;
+  margin:0;
+  background:#f4f6f8;
+  color:#2c3e50;
+}
+
+/* NAV */
+nav {
+  background:#2c3e50;
+  padding:10px;
+  text-align:center;
+}
+
+nav a {
+  color:white;
+  margin:0 10px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* TITRES */
+h1 {
+  text-align:center;
+  margin:30px 0;
+}
+
+h2 {
+  margin-top:0;
+}
+
+/* CARD */
+.card {
+  background:white;
+  max-width:900px;
+  margin:20px auto;
+  padding:20px;
+  border-radius:12px;
+  box-shadow:0 4px 12px rgba(0,0,0,0.08);
+  border:1px solid #e5e7eb;
+}
+
+/* BLOCS */
+.bloc {
+  margin-bottom:20px;
+  padding-bottom:15px;
+  border-bottom:1px solid #eee;
+}
+
+/* METHODO */
+.methode {
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.methode-box {
+  flex:1;
+  background:#f9fafb;
+  padding:15px;
+  border-radius:8px;
+  border:1px solid #e5e7eb;
+}
+
+/* TIMELINE */
+.timeline {
+  max-width:900px;
+  margin:40px auto;
+}
+
+.timeline-item {
+  margin-bottom:20px;
+}
+
+.timeline-content {
+  background:white;
+  padding:15px;
+  border-radius:10px;
+  border-left:4px solid #3498db;
+  box-shadow:0 2px 8px rgba(0,0,0,0.05);
+}
+
+.timeline-date {
+  font-size:0.8em;
+  color:#777;
+  margin-bottom:5px;
+}
+
+/* LIENS */
+a {
+  color:#3498db;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+a:hover {
+  text-decoration:underline;
+}
+
+</style>
+
 </head>
 
 <body>
@@ -13,17 +118,49 @@
 <a href="index.html">Accueil</a>
 <a href="cv.html">CV</a>
 <a href="competences.html">Compétences</a>
-<a href="activite_école.html">Activité école</a>
+<a href="activite_ecole.html">Activité école</a>
 <a href="activite_entreprise.html">Activité entreprise</a>
 <a href="projets.html">Projets</a>
 <a href="veille.html">Veille</a>
 <a href="contact.html">Contact</a>
 </nav>
 
-<section class="veille">
-
 <h1>Veille technologique</h1>
 
+<!-- MÉTHODOLOGIE EN PREMIER -->
+<div class="card">
+
+<h2>Méthodologie de veille</h2>
+
+<p>
+Dans le cadre de ma veille sur l’éco-conception web, j’ai mis en place une stratégie combinant veille Pull et Push.
+</p>
+
+<div class="methode">
+
+<div class="methode-box">
+<h3>Veille Pull</h3>
+<ul>
+<li>Recherche d’articles spécialisés</li>
+<li>Consultation de sites (GreenIT, EcoIndex)</li>
+<li>Lecture de documentation technique</li>
+</ul>
+</div>
+
+<div class="methode-box">
+<h3>Veille Push</h3>
+<ul>
+<li>Flux RSS</li>
+<li>Alertes Google</li>
+<li>Suivi d’actualités numériques</li>
+</ul>
+</div>
+
+</div>
+
+</div>
+
+<!-- CONTEXTE -->
 <div class="card">
 
 <div class="bloc">
@@ -33,221 +170,77 @@
 
 <div class="bloc">
 <h2>Problématique</h2>
-
 <ul>
 <li>Qu’est-ce que l’éco-conception web ?</li>
-<li>Comment réduire l’impact environnemental des sites web ?</li>
-<li>Comment concilier performance, accessibilité et sobriété numérique ?</li>
+<li>Comment réduire l’impact environnemental ?</li>
+<li>Comment concilier performance et sobriété ?</li>
 </ul>
-
 </div>
 
 <div class="bloc">
-
 <h2>Résumé</h2>
 
 <p>
-L’éco-conception web consiste à réduire l’impact environnemental des services numériques
-en intégrant des pratiques responsables dès la conception des sites et applications.
+L’éco-conception web vise à réduire l’impact environnemental des services numériques
+en optimisant les ressources utilisées dès la conception.
 </p>
 
 <p>
-Avec l’augmentation du nombre d’utilisateurs et de services numériques,
-la consommation énergétique du web continue d’augmenter.
-L’éco-conception vise donc à optimiser les ressources utilisées
-afin de limiter cette empreinte carbone.
+Cela passe par la réduction du poids des pages, l’optimisation du code
+et une meilleure gestion des serveurs.
 </p>
 
 <p>
-Cela passe par l’optimisation du code, la réduction du poids des pages,
-la limitation des scripts inutiles et une meilleure gestion des serveurs.
-Des outils comme EcoIndex ou GreenIT Analysis permettent d’évaluer
-l’impact environnemental d’un site web.
+Des outils comme EcoIndex permettent de mesurer l’impact environnemental
+et d’identifier les axes d’amélioration.
 </p>
 
 </div>
 
 </div>
-
-</section>
 
 <!-- TIMELINE -->
-<h2>Évolution des recherches sur l'éco-conception web (2024-2026)</h2>
-  <section class="timeline">
+<h1>Suivi de la veille</h1>
+
+<section class="timeline">
 
 <div class="timeline-item">
 <div class="timeline-content">
-
 <div class="timeline-date">Octobre 2024</div>
-
-<h3>Performance web et sobriété numérique</h3>
-
-<p>
-La performance web permet d’améliorer l’expérience utilisateur
-tout en réduisant la consommation énergétique des sites internet.
-</p>
-
-<a href="https://web.dev/performance/" target="_blank">Voir l'article</a>
-
+<h3>Performance web</h3>
+<p>Optimisation des performances pour réduire la consommation.</p>
+<a href="#">Voir l'article</a>
 </div>
 </div>
-
 
 <div class="timeline-item">
 <div class="timeline-content">
-
 <div class="timeline-date">Novembre 2024</div>
-
-<h3>Impact environnemental du numérique</h3>
-
-<p>
-Analyse de la croissance de l’empreinte carbone du numérique
-et des solutions proposées pour réduire cet impact.
-</p>
-
-<a href="https://www.ademe.fr/" target="_blank">Voir l'article</a>
-
+<h3>Impact numérique</h3>
+<p>Analyse de l’empreinte carbone du numérique.</p>
+<a href="#">Voir l'article</a>
 </div>
 </div>
-
 
 <div class="timeline-item">
 <div class="timeline-content">
-
 <div class="timeline-date">Janvier 2025</div>
-
-<h3>Webinar éco-conception web</h3>
-
-<p>
-Un webinaire présentant les principes fondamentaux de l’éco-conception web
-et les outils permettant de mesurer l’impact environnemental des sites.
-</p>
-
-<a href="https://www.websenso.com/webinar/2024-atelier-eco-conception" target="_blank">Voir l'article</a>
-
+<h3>Webinaire</h3>
+<p>Présentation des outils d’éco-conception.</p>
+<a href="#">Voir l'article</a>
 </div>
 </div>
-
 
 <div class="timeline-item">
 <div class="timeline-content">
-
-<div class="timeline-date">Avril 2025</div>
-
-<h3>Sustainable Web Design</h3>
-
-<p>
-L’éco-conception web repose sur la réduction des données transférées
-et sur l’optimisation des ressources utilisées par les sites.
-</p>
-
-<a href="https://www.smashingmagazine.com/" target="_blank">Voir l'article</a>
-
+<div class="timeline-date">2026</div>
+<h3>EcoIndex</h3>
+<p>Analyse environnementale des sites web.</p>
+<a href="#">Voir l'article</a>
 </div>
 </div>
-
-
-<div class="timeline-item">
-<div class="timeline-content">
-
-<div class="timeline-date">Mai 2025</div>
-
-<h3>Optimisation du poids des pages web</h3>
-
-<p>
-Réduire la taille des pages web permet d’améliorer la performance
-et de limiter la consommation énergétique.
-</p>
-
-<a href="https://web.dev/" target="_blank">Voir l'article</a>
-
-</div>
-</div>
-
-
-<div class="timeline-item">
-<div class="timeline-content">
-
-<div class="timeline-date">Août 2025</div>
-
-<h3>Accessibilité et éco-conception</h3>
-
-<p>
-L’accessibilité numérique et l’éco-conception sont liées car
-elles visent toutes deux à améliorer l’efficacité et la simplicité des interfaces.
-</p>
-
-<a href="https://www.w3.org/WAI/" target="_blank">Voir l'article</a>
-
-</div>
-</div>
-
-
-<div class="timeline-item">
-<div class="timeline-content">
-
-<div class="timeline-date">Janvier 2026</div>
-
-<h3>Impact des data centers</h3>
-
-<p>
-Les data centers représentent une part importante
-de la consommation énergétique du numérique.
-</p>
-
-<a href="https://www.iea.org/reports/data-centres-and-data-transmission-networks" target="_blank">Voir l'article</a>
-
-</div>
-</div>
-
-
-<div class="timeline-item">
-<div class="timeline-content">
-
-<div class="timeline-date">Février 2026</div>
-
-<h3>EcoIndex : outil d’analyse environnementale</h3>
-
-<p>
-EcoIndex est un outil permettant d’analyser la performance
-environnementale d’un site web et d’identifier les axes d’amélioration.
-</p>
-
-<a href="https://ecoindex.fr/" target="_blank">Voir l'article</a>
-
-</div>
-</div>
-
-</section>
-
-
-<section class="veille-methode">
-
-<h2>Méthodologie de veille</h2>
-
-<p>
-Pour réaliser cette veille technologique sur l’éco-conception web,
-j’ai utilisé différentes méthodes de recherche d’information.
-</p>
-
-<h3>Veille Pull</h3>
-
-<ul>
-<li>Recherche d’articles spécialisés</li>
-<li>Consultation de sites spécialisés (GreenIT, EcoIndex)</li>
-<li>Lecture de blogs et documentation technique</li>
-</ul>
-
-<h3>Veille Push</h3>
-
-<ul>
-<li>Flux RSS</li>
-<li>Alertes Google</li>
-<li>Suivi d’actualités sur le numérique responsable</li>
-</ul>
 
 </section>
 
 </body>
 </html>
-
