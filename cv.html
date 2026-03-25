@@ -7,7 +7,86 @@
 </head>
 
 <body>
+  <style>
+    /* --- Fond global --- */
+body {
+  background: #f4f6f8;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
 
+/* --- Navigation harmonisée --- */
+nav {
+  background: #2c3e50;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* --- Titres --- */
+h1, h2, h3 {
+  color: #2c3e50;
+}
+
+/* --- Conteneur principal --- */
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 30px 20px;
+}
+
+/* --- Cartes (sections du CV) --- */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  margin: 25px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* --- Texte lisible --- */
+.card p,
+.card li,
+.card span {
+  color: #222;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* --- Sous-titres d'expérience --- */
+.subtitle {
+  display: block;
+  margin-bottom: 10px;
+  color: #555;
+  font-style: italic;
+}
+
+/* --- Bouton PDF --- */
+.btn {
+  display: block;
+  width: fit-content;
+  margin: 20px auto;
+  padding: 10px 15px;
+  background: #27ae60;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: #219150;
+}
+
+  </style>
+  
 <nav>
   <a href="index.html">Accueil</a>
   <a href="cv.html">CV</a>
@@ -90,7 +169,7 @@
     
   </div>
 </section>
-<a href="image/CV pour embauche alternace.pdf" class="btn">Télécharger mon CV PDF</a>
+<a href="image/CV pour embauche.pdf" class="btn">Télécharger mon CV PDF</a>
   
 </body>
 </html>
