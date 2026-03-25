@@ -14,24 +14,22 @@ h1 {text-align:center; margin:30px 0;}
 
 .grille-projets {display:flex; flex-wrap:wrap; gap:20px; justify-content:center; padding:20px;}
 
-.projet-card {width:300px; background:white; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden; cursor:pointer; transition:0.3s;}
+.projet-card {width:320px; background:white; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1); overflow:hidden; cursor:pointer; transition:0.3s;}
 .projet-card:hover {transform:translateY(-5px);}
 
-.projet-card summary {list-style:none; padding:0;}
+.projet-card summary {list-style:none;}
 .projet-card img {width:100%; height:180px; object-fit:cover;}
 
 .projet-content {padding:15px;}
-
 .projet-content h2 {margin:0; font-size:1.2em;}
-.techno {font-size:0.8em; color:#777;}
+.techno {font-size:0.8em; color:#777; margin-top:5px;}
 
 .details-projet {padding:15px; border-top:1px solid #ddd;}
-
-.projet-section {margin-bottom:15px;}
+.projet-section {margin-bottom:20px;}
 .projet-section h3 {margin-bottom:5px; color:#2c3e50;}
 
 .galerie {display:flex; gap:10px; flex-wrap:wrap;}
-.galerie img {width:100px; border-radius:5px;}
+.galerie img {width:120px; border-radius:5px;}
 
 .tags span {background:#3498db; color:white; padding:5px 8px; margin:2px; border-radius:5px; font-size:0.8em;}
 
@@ -45,12 +43,7 @@ h1 {text-align:center; margin:30px 0;}
 
 <nav>
   <a href="index.html">Accueil</a>
-  <a href="cv.html">CV</a>
-  <a href="competences.html">Compétences</a>
-  <a href="activite_entreprise.html">Activité entreprise</a>
   <a href="projets.html">Projets</a>
-  <a href="veille.html">Veille</a>
-  <a href="contact.html">Contact</a>
 </nav>
 
 <h1>Mes projets</h1>
@@ -62,7 +55,7 @@ h1 {text-align:center; margin:30px 0;}
 <summary>
 <img src="image/Page_acceuil_site_automobile.png">
 <div class="projet-content">
-<h2>Suivi de performance</h2>
+<h2>Suivi de performance commerciale</h2>
 <p class="techno">HTML · CSS · SQL · PHP</p>
 </div>
 </summary>
@@ -71,16 +64,22 @@ h1 {text-align:center; margin:30px 0;}
 
 <div class="projet-section">
 <h3>📌 Contexte</h3>
-<p>Centralisation des données commerciales automobile.</p>
+<p>Centraliser les données de vente automobile pour analyser les performances des équipes, du stock et du chiffre d’affaires.</p>
 </div>
 
 <div class="projet-section">
-<h3>🎯 Objectif</h3>
-<p>Suivre les performances via dashboard.</p>
+<h3>🎯 Objectifs</h3>
+<p>Créer un dashboard permettant une analyse multi-niveaux (commercial, manager, direction).</p>
 </div>
 
 <div class="projet-section">
-<h3>💻 Aperçu</h3>
+<h3>🧠 Conception</h3>
+<p>Modélisation de la base de données et structuration des relations entre clients, ventes et véhicules.</p>
+<a href="image/model_vente_vehicule_lié_client_lege-Model EA.drawio.pdf" class="btn">Voir le schéma BDD</a>
+</div>
+
+<div class="projet-section">
+<h3>💻 Interface</h3>
 <div class="galerie">
 <img src="image/Page_connexion_site_automobile.png">
 <img src="image/Vue_directeur_general.png">
@@ -88,10 +87,15 @@ h1 {text-align:center; margin:30px 0;}
 </div>
 
 <div class="projet-section">
-<h3>⚙️ Tech</h3>
+<h3>⚙️ Technologies</h3>
 <div class="tags">
 <span>HTML</span><span>CSS</span><span>SQL</span><span>PHP</span>
 </div>
+</div>
+
+<div class="projet-section">
+<h3>📄 Documentation</h3>
+<a href="image/Fiche_Réalisation_E6_SLAM_2025_client_lege.pdf" class="btn">Voir la documentation</a>
 </div>
 
 </div>
@@ -102,8 +106,8 @@ h1 {text-align:center; margin:30px 0;}
 <summary>
 <img src="images/projet1.png">
 <div class="projet-content">
-<h2>Imputation de données</h2>
-<p class="techno">HTML · SQL · PHP</p>
+<h2>Interface d’imputation de données</h2>
+<p class="techno">HTML · CSS · SQL · PHP</p>
 </div>
 </summary>
 
@@ -111,37 +115,37 @@ h1 {text-align:center; margin:30px 0;}
 
 <div class="projet-section">
 <h3>📌 Contexte</h3>
-<p>Saisie et modification de données utilisateur.</p>
+<p>Permettre aux utilisateurs de saisir et modifier des données métier via une interface web simple.</p>
 </div>
 
 <div class="projet-section">
-<h3>🎯 Objectif</h3>
-<p>Interface simple avec stockage SQL.</p>
+<h3>🎯 Objectifs</h3>
+<p>Créer une application fiable avec validation des données et stockage en base SQL.</p>
 </div>
 
 <div class="projet-section">
-<h3>💻 Aperçu</h3>
+<h3>🧠 Conception</h3>
+<p>Organisation des formulaires, gestion des requêtes SQL et traitement côté serveur.</p>
+</div>
+
+<div class="projet-section">
+<h3>💻 Interface</h3>
 <div class="galerie">
 <img src="images/projet2.png">
 <img src="images/projet3.png">
 </div>
 </div>
 
+<div class="projet-section">
+<h3>⚙️ Technologies</h3>
+<div class="tags">
+<span>HTML</span><span>CSS</span><span>SQL</span><span>PHP</span>
+</div>
+</div>
+
 </div>
 </details>
 
-</div>
-
-<h1>Autres projets</h1>
-
-<div style="width:90%; margin:auto; background:white; padding:20px; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);">
-<ul>
-<li>Site vitrine HTML / CSS</li>
-<li>Base de données SQL</li>
-<li>Application Python CSV</li>
-<li>Carte QGIS</li>
-<li>Script Bash monitoring</li>
-</ul>
 </div>
 
 </body>
