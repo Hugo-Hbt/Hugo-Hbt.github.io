@@ -82,6 +82,12 @@ h1, h2, h3 {
   border-top:1px solid #eee;
 }
 
+  /* carte active */
+.card:has(details[open]) {
+  background:#ffffff;
+  box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
 .projet-section {
   border-top:1px solid #f0f0f0;
   padding-top:10px;
@@ -134,12 +140,24 @@ h2 {
 .galerie img {
   width:100px;
   border-radius:5px;
+  transition:0.3s;
+}
+
+.galerie img:hover {
+  transform:scale(1.1);
 }
 
 /* DETAILS */
 details {
   margin-top:10px;
 }
+
+  details[open] {
+  background:#f9fafb; /* gris très léger */
+  border-radius:8px;
+  padding:10px;
+}
+
 
 summary {
   cursor:pointer;
@@ -212,8 +230,15 @@ des indicateurs et fiabilisation des données.
 
 <!-- CAPTURES -->
 <div class="galerie">
-<img src="image/report1.png">
-<img src="image/report2.png">
+
+<a href="image/report1.png" target="_blank">
+  <img src="image/report1.png">
+</a>
+
+<a href="image/report2.png" target="_blank">
+  <img src="image/report2.png">
+</a>
+
 </div>
 
 </details>
