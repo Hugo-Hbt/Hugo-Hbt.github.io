@@ -90,6 +90,25 @@ figure {
   border: 1px solid #ddd;
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
+    
+.images-cote-a-cote {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* espace entre les images */
+    margin: 20px auto;
+}
+
+.images-cote-a-cote figure {
+    max-width: 300px;
+    text-align: center;
+}
+
+.images-cote-a-cote img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
 
 /* --- Bouton CV --- */
 .btn {
@@ -163,12 +182,18 @@ figure {
                 <p><strong><dfn>&lt;CAO / DAO&gt;</dfn></strong> : "Conception / Dessin Assisté par Ordinateur"</p>
                 
 
-<figure style="max-width:500px; margin:auto; text-align:center;">
-    <img src="image/DAO-GE.png" alt="Interface d'un logiciel de DAO" style="width:100%; height:auto; border:1px solid #ccc; border-radius:8px;" />
-    <figcaption style="font-size:0.9em; color:#555; margin-top:5px;">
-        Exemple d'interface d'un logiciel de DAO
-    </figcaption>
-</figure>
+<div class="images-cote-a-cote">
+    <figure>
+        <img src="image/DAO-GE.png" alt="Interface d'un logiciel de DAO" />
+        <figcaption>Exemple d'interface d'un logiciel de DAO</figcaption>
+    </figure>
+
+    <figure>
+        <img src="image/image_sig.png" alt="Deuxième exemple" />
+        <figcaption>Deuxième exemple d'interface</figcaption>
+    </figure>
+</div>
+
 
             </article></div>
 </section>
